@@ -1,23 +1,12 @@
+import os, sys, platform
 try:
-
     import requests
-
 except:
-
     os.system('pip install requests')
-
-import requests
+os.system('xdg-open https://facebook.com/groups/291183553213655/')
 
 bit = platform.architecture()[0]
-
 if bit == '64bit':
-
-    from SK64 import main
-
-    main() 
-
+    import data64
 elif bit == '32bit':
-
-    from SK32 import main
-
-    main()
+    import data32
