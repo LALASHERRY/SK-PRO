@@ -18,4 +18,4 @@ git clone https://github.com/LALASHERRY/SK-PRO
 
 cd SK-PRO
 
-python SK.py
+python Pro.py
