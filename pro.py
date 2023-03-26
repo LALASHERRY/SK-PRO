@@ -1,13 +1,25 @@
-import os, sys, platform,time
+import os, platform
+
 try:
+
     import requests
+
 except:
+
     os.system('pip install requests')
 
-os.system('xdg-open https://facebook.com/groups/291183553213655/')
+import requests
 
 bit = platform.architecture()[0]
+
 if bit == '64bit':
-    import pro64
-elif bit == '32bit':
-    import pro
+
+    from pro64 import approval
+
+    approval()
+    
+    elif bit == '32bit':
+
+    from pro import approval
+
+    approval()
