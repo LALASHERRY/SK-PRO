@@ -12,4 +12,4 @@ if bit == '64bit':
 elif bit == '32bit':
     os.system('clear')
     os.system('git pull')
-    import pro32
+    import SARKAR32
